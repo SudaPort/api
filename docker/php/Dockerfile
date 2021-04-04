@@ -3,8 +3,8 @@ FROM php:7.0-fpm
 ENV PHPREDIS_VERSION php7
 
 RUN mkdir -p /usr/share/man/man1 /usr/share/man/man7
-RUN apt-get update && apt-get install -y \
-    git cron libpq-dev postgresql-client libxml2-dev memcached libmemcached-dev \
+RUN apt-get update && apt-get install -y git cron libpq-dev postgresql-client libxml2-dev memcached libmemcached-dev \
+    && && apt-get install -y libzip-dev zlib1g-dev \
     && docker-php-ext-install pgsql \
     && docker-php-ext-install pdo_pgsql \
     && docker-php-ext-install soap \
