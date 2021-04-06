@@ -38,5 +38,5 @@ ADD config/php.ini /usr/local/etc/php/php.ini
 ADD ./entrypoint.sh /
 
 ENV PATH $PATH:/root/.composer/vendor/bin
-
+RUN chmod u+x+r+w /entrypoint.sh
 CMD ["/entrypoint.sh"]
