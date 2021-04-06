@@ -21,11 +21,11 @@ RUN apt-get update && apt-get install -y git libssl-dev cron libpq-dev postgresq
     && echo "extension=memcached.so" > /usr/local/etc/php/conf.d/30-memcached.ini
 
     # Redis
-RUN curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/$PHPREDIS_VERSION.tar.gz \
+RUN curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/5.3.4.tar.gz \
     && mkdir -p /usr/src/php/ext/ \
     && tar xfz /tmp/redis.tar.gz \
     && rm -r /tmp/redis.tar.gz \
-    && mv phpredis-$PHPREDIS_VERSION /usr/src/php/ext/redis \
+    && mv phpredis-5.3.4 /usr/src/php/ext/redis \
     && docker-php-ext-install redis \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
