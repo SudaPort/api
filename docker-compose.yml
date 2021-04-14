@@ -6,7 +6,7 @@ services:
     container_name: crypto-api-nginx
     image: nginx:latest
     ports:
-      - "8180:8180"
+      - "8180:80"
     volumes:
       - ./src:/src
       - ./logs/nginx/:/logs
