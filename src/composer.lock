@@ -11,7 +11,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/openbankit/stellar-php.git",
+                "url": "https://github.com/sudaport/stellar-php.git",
                 "reference": "593390f92a60d8d967319ef072eea3181d4c02be"
             },
             "require": {
