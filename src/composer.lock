@@ -7,8 +7,8 @@
     "content-hash": "2f5415e817155be048288b357b964767",
     "packages": [
         {
-            "name": "atticlab/stellar-php-sdk",
-            "version": "dev-master",
+            "name": "sudaport/stellar-php-sdk",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sudaport/stellar-php.git",
@@ -738,7 +738,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "atticlab/stellar-php-sdk": 20
+        "sudaport/stellar-php-sdk": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
