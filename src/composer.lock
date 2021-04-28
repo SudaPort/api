@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sudaport/stellar-php.git",
-                "reference": "593390f92a60d8d967319ef072eea3181d4c02be"
+                "reference": "ff4729ae239e1206a4745c6bab58b39ddcbc6c57"
             },
             "require": {
                 "ext-curl": "*",
