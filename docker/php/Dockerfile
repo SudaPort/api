@@ -4,7 +4,7 @@ ENV PHPREDIS_VERSION php7
 
 RUN mkdir -p /usr/share/man/man1 /usr/share/man/man7
 RUN apt-get update && apt-get install -y git libssl-dev cron libpq-dev postgresql-client libxml2-dev memcached libmemcached-dev \
-    && apt-get install -y libzip-dev zlib1g-dev \
+    && apt-get install -y libzip-dev zlib1g-dev wget \
     && docker-php-ext-install pgsql \
     && docker-php-ext-install pdo_pgsql \
     && docker-php-ext-install soap \
@@ -27,7 +27,7 @@ RUN curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/5.
     && rm -r /tmp/redis.tar.gz \
     && mv phpredis-5.3.4 /usr/src/php/ext/redis \
     && docker-php-ext-install redis \
-    && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+    && wget https://getcomposer.org/installer && php installer --install-dir=/usr/local/bin --filename=composer
 
 # Add crontab file in the cron directory
 ADD config/crontab /crontab_tmp
