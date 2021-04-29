@@ -4,7 +4,7 @@ namespace Companies;
 
 use \App\Models\Companies;
 use \Phalcon\DI;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 use GuzzleHttp\Client;
 use App\Lib\Response;
 

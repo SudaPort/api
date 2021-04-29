@@ -6,7 +6,7 @@ use \App\Models\Companies;
 use App\Models\Agents;
 use App\Models\Enrollments;
 use \Phalcon\DI;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 use GuzzleHttp\Client;
 use App\Lib\Response;
 

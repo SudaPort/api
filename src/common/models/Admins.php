@@ -6,7 +6,7 @@ use \Basho\Riak;
 use \Basho\Riak\Command;
 use Phalcon\DI;
 use App\Lib\Exception;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 class Admins extends ModelBase implements ModelInterface
 {

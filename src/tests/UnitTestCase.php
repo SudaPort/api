@@ -4,7 +4,7 @@ use Phalcon\Di;
 use Phalcon\Test\UnitTestCase as PhalconTestCase;
 use SWP\Services\RiakDBService;
 use GuzzleHttp\Client;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 abstract class UnitTestCase extends PhalconTestCase
 {
@@ -57,7 +57,7 @@ abstract class UnitTestCase extends PhalconTestCase
         }
 
         $this->test_config = $test_data;
-        $this->api_host    = 'api.smartmoney.com.ua';
+        $this->api_host    = 'api.gurosh.com';
 
     }
 

@@ -4,7 +4,7 @@ namespace App\Controllers;
 use App\Lib\Exception;
 use App\Lib\Response;
 use App\Models\IpBans;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 class BansController extends ControllerBase
 {

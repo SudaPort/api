@@ -6,7 +6,7 @@ use App\Lib\Exception;
 use App\Models\Agents;
 use App\Models\Companies;
 use App\Models\Enrollments;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 class AgentsController extends ControllerBase
 {
@@ -56,7 +56,7 @@ class AgentsController extends ControllerBase
                             $this->logger->emergency('Cannot get email of company (company code: ' . $cmp_code . ')');
                         } else {
                             // Send email to registered user
-                            $sent = $this->mailer->send($company->email, 'Welcome to smartmoney',
+                            $sent = $this->mailer->send($company->email, 'Welcome to Gurosh',
                                 ['enrollment_created',
                                     [
                                         'password' => $enrollment->otp_s,

@@ -4,7 +4,7 @@ namespace App\Controllers;
 use App\Lib\Response;
 use App\Lib\Exception;
 use App\Models\Companies;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 class CompaniesController extends ControllerBase
 {

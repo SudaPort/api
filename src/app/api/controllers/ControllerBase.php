@@ -4,8 +4,8 @@ namespace App\Controllers;
 
 use App\Lib\Response;
 use App\Lib\Exception;
-use Smartmoney\Stellar\Account;
-use Smartmoney\Stellar\Helpers;
+use Gurosh\Stellar\Account;
+use Gurosh\Stellar\Helpers;
 use App\Models\IpBans;
 
 abstract class ControllerBase extends \Phalcon\Mvc\Controller

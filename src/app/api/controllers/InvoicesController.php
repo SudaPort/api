@@ -5,7 +5,7 @@ use App\Lib\Response;
 use App\Models\Invoices;
 use App\Lib\Exception;
 use App\Models\InvoicesStatistic;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 class InvoicesController extends ControllerBase
 {

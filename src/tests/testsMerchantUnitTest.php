@@ -5,7 +5,7 @@ namespace Merchant;
 use \App\Models\MerchantStores;
 use \App\Models\MerchantOrders;
 use \Phalcon\DI;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 use GuzzleHttp\Client;
 use App\Lib\Response;
 

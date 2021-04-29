@@ -5,7 +5,7 @@ use App\Lib\Response;
 use App\Models\Sms;
 use App\Lib\Exception;
 use DateTime;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 use SoapClient;
 
 class SmsController extends ControllerBase

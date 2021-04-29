@@ -2,7 +2,7 @@
 namespace App\Controllers;
 
 use App\Lib\Errors;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 use App\Lib\Response;
 
 class NonceController extends ControllerBase

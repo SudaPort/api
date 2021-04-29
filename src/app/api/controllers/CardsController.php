@@ -5,7 +5,7 @@ use App\Lib\Response;
 use App\Models\Cards;
 use App\Lib\Exception;
 use GuzzleHttp\Client;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 class CardsController extends ControllerBase
 {

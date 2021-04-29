@@ -8,7 +8,7 @@ use \Basho\Riak\Bucket;
 use \Basho\Riak\Command;
 use App\Lib\Exception;
 use Phalcon\DI;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 class Cards extends ModelBase implements ModelInterface
 {

@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Lib\Response;
 use App\Lib\Exception;
 use App\Models\Admins;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 class AdminsController extends ControllerBase
 {

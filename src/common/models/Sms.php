@@ -6,7 +6,7 @@ use \Basho\Riak;
 use \Basho\Riak\Command;
 use App\Lib\Exception;
 use Phalcon\DI;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 class Sms extends ModelBase implements ModelInterface
 {

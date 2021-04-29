@@ -5,7 +5,7 @@ use App\Lib\Response;
 use App\Models\MerchantStores;
 use App\Models\MerchantOrders;
 use App\Lib\Exception;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 class MerchantController extends ControllerBase
 {

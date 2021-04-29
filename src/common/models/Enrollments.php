@@ -5,7 +5,7 @@ namespace App\Models;
 use \Basho\Riak;
 use \Basho\Riak\Command;
 use Phalcon\DI;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 use App\Lib\Exception;
 
 class Enrollments extends ModelBase implements ModelInterface

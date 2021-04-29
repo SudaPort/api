@@ -7,7 +7,7 @@ use App\Models\Companies;
 use App\Models\Enrollments;
 use App\Models\Agents;
 use App\Models\RegUsers;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 class EnrollmentsController extends ControllerBase
 {

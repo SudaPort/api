@@ -1,7 +1,7 @@
 <?php
 
 namespace App\lib;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 class Request extends \Phalcon\Http\Request
 {

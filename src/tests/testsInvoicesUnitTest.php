@@ -5,7 +5,7 @@ namespace Invoices;
 use App\Models\InvoicesBans;
 use App\Models\Invoices;
 use \Phalcon\DI;
-use Smartmoney\Stellar\Account;
+use Gurosh\Stellar\Account;
 
 use GuzzleHttp\Client;
 use App\Lib\Response;
