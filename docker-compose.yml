@@ -17,7 +17,7 @@ services:
       default:
         external:
           name: guroshnet
-            ipv4_address: 172.18.0.10
+            ipv4_address: 172.72.0.10
 
   php:
     restart: always
@@ -35,7 +35,7 @@ services:
       default:
         external:
           name: guroshnet
-            ipv4_address: 172.18.0.11
+            ipv4_address: 172.72.0.11
 
   memcached:
       restart: always
@@ -47,4 +47,4 @@ services:
         default:
           external:
             name: guroshnet
-              ipv4_address: 172.18.0.12
+              ipv4_address: 172.72.0.12
