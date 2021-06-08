@@ -14,9 +14,8 @@ services:
     links:
       - php
     networks:
-      guroshnet:
-        external: true
-          ipv4_address: 188.0.0.5
+      guroshnet0:
+        ipv4_address: 188.0.0.10
 
   php:
     restart: always
@@ -31,9 +30,8 @@ services:
     links:
       - memcached
     networks:
-      guroshnet:
-        external: true
-          ipv4_address: 188.0.0.6
+      guroshnet0:
+        ipv4_address: 188.0.0.11
 
   memcached:
       restart: always
@@ -42,5 +40,10 @@ services:
       volumes:
         - ./logs/memcached/:/logs
       networks:
-        guroshnet:
-          external: true
+        guroshnet0:
+          ipv4_address: 188.0.0.12
+
+networks:
+  guroshnet0:
+    external: true
+    name: guroshnet
