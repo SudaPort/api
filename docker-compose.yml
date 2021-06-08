@@ -15,8 +15,7 @@ services:
       - php
     networks:
         docker0:
-          external: true
-          ipv4_address: 172.17.0.10
+         - ipv4_address: 172.17.0.10
 
   php:
     restart: always
@@ -32,8 +31,7 @@ services:
       - memcached
     networks:
         docker0:
-          external: true
-          ipv4_address: 172.17.0.11
+         - ipv4_address: 172.17.0.11
 
   memcached:
       restart: always
@@ -43,5 +41,4 @@ services:
         - ./logs/memcached/:/logs
       networks:
         docker0:
-          external: true
-          ipv4_address: 172.17.0.12
+         - ipv4_address: 172.17.0.12
