@@ -15,7 +15,7 @@ services:
       - php
     networks:
       default:
-        external:
+        external: true
           name: guroshnet
 
   php:
@@ -32,7 +32,7 @@ services:
       - memcached
     networks:
       default:
-        external:
+        external: true
           name: guroshnet
 
   memcached:
@@ -43,5 +43,5 @@ services:
         - ./logs/memcached/:/logs
       networks:
         default:
-          external:
+          external: true
             name: guroshnet
