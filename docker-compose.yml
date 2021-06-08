@@ -14,8 +14,10 @@ services:
     links:
       - php
     networks:
-        docker0:
-         - ipv4_address: 172.17.0.10
+      default:
+        external:
+          name: guroshnet
+            ipv4_address: 172.18.0.10
 
   php:
     restart: always
@@ -30,8 +32,10 @@ services:
     links:
       - memcached
     networks:
-        docker0:
-         - ipv4_address: 172.17.0.11
+      default:
+        external:
+          name: guroshnet
+            ipv4_address: 172.18.0.11
 
   memcached:
       restart: always
@@ -40,5 +44,7 @@ services:
       volumes:
         - ./logs/memcached/:/logs
       networks:
-        docker0:
-         - ipv4_address: 172.17.0.12
+        default:
+          external:
+            name: guroshnet
+              ipv4_address: 172.18.0.12
